@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html xml:lang="en" lang="en">
+<head>
+  <title>CSC 196V  Assignment 2</title>
+  <style>
+* { padding: 0; margin: 0; }
+
+body {
+  margin: 0 auto 0 auto;
+  padding: 0;
+  background-color: #33333f;
+  width: 840px;
+  font-family: "Avenir", "Avenir Next", Helvetica Neue, Arial;
+  font-size: 0.95em;
+}
+
+a, a:visited { text-decoration: none; color: #7533f4; }
+a:hover { text-decoration: underline; color: #f4b014; }
+img, a.img, a:hover.img { border: none; }
+
+img {
+  max-width: 800px;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #492a7c;
+  background-color: inherit;
+  font-weight: normal;
+  padding: 0 0 5px 0;
+  margin: 15px 0 0 0;
+  border: none;
+  clear: right;
+}
+h1 { font-size: 18pt; margin:  5px 0 10px 0; line-height: 28px; }
+h2 { font-size: 14pt; margin: 30px 0 15px 0; letter-spacing: 0.01em; border-bottom: 1px solid #ccc;  line-height: 20px;}
+h3 { font-size: 13pt; }
+h4 { font-size: 12pt; }
+h5 { font-size: 11pt; }
+p { margin: 0 0 10px 0; }
+hr { border: 0px; border-top: 1px solid #ccc; height: 0px; }
+ol { margin: 1em; }
+
+.content {
+  margin: 0;
+  padding: 15px 20px;
+  background-color: #ffffff;
+}
+
+.article {
+  line-height: 1.5em;
+}
+
+.entry  {
+  border-top: 1px solid #ddd;
+  padding-top: 2px;
+  margin-top: 3em;
+}
+  </style>
+</head>
+
+<body>
+<div class='content'>
+
+<section>
+  <h1>Assignment 2: Exploratory Data Analysis</h1>
+
+  <p>
+    <strong>Cyrill Castro</strong>
+  </p>
+</section>
+
+<section>
+  <h2>Dataset</h2>
+
+  <p>
+    <b>FIRST SOURCE: Science &amp; Engineering Indicators 2016</b><br/>
+    This data contains a numerous amount of data all pertaining to various trends in STEM classes, academic performances, and public attitudes, etc. This report was produced by the National Science Foundation of the United States. I am interested in this dataset because it allows me to see the various trends of STEM classes and majors, especially between males and females. With this data, I will be able to see relationships between males and female representation in computer science, and I will be able to compare the difference in females in computer science and females in other STEM majors. 
+  </p>
+    
+  <p>
+    <b>SECOND SOURCE: Differences in STEM Gender Disparity Between India and the United States</b><br/>
+    This dataset is from an article that studies the difference in STEM gender disparity between India and the United States. This report was produced by Purva Yardi, Megh Marathe, and Kentaro Toyama, who are all faculty from the School of Information at the University of Michigan. I am interested in this dataset because India is a country that thrives in success within the computer science field. Within my visualizations, it could serve as a "control" variable that can display how significant the gender disparity issue in the U.S. is. 
+  </p>
+
+  <p>
+    The data is available online at the following sites:
+    <strong>
+        <li><a href="https://www.nsf.gov/statistics/2016/nsb20161/#/data">https://www.nsf.gov/statistics/2016/nsb20161/#/data</a></li>
+        <li><a href="http://www.hcixb.org/papers_2017/hcixb17-final-37.pdf">http://www.hcixb.org/papers_2017/hcixb17-final-37.pdf</a></li>
+    </strong>
+  </p>
+</section>
+
+<section>
+  <h2>Initial Analysis Questions</h2>
+  <ol>
+    <li>Is there a significant difference between male representation and female representation in computer science? If so, what is that difference?</li>
+    <li>How does the representation of females in other majors compare to the representation of females in computer science?</li>
+    <li>How does their academic performance in necessary classes for computer science compare to the academic performance of males in the same classes?</li>
+    <li>How does the representation of females in other majors compare to the representation of females in computer science?</li>
+    <li>How does the representation of U.S. women in computer science compare to the representation of women in computer science in India, a country that is well-known for its success in the industry?</li>
+  </ol>
+</section>
+
+<section>
+  <h2>Discoveries &amp; Insights</h2>
+  
+    
+  <h3><i>Is there a significant difference between male representation and female representation in computer science?</i></h3>
+  
+  <div class="entry">
+    <img src="us-vs-india.png" />
+    <p class="caption">
+        India is a country that is well-known for its success in the computer science industry. This study compares the relationships between computer science and females between India and the U.S. It shows shows that the U.S.A's female population is larger than India's female population. Though the U.S. has a higher female population, there are significantly less women with a Computer Science degree in the U.S. than India, indicating an issue of misrepresentation in the field.  
+    </p>
+  </div>
+
+  <div class="entry">
+    <img src="male-to-female-ratio.png" />
+    <p class="caption">
+        This visualization forms also compares India and the U.S.A, with regards to the male-to-female ration in computer science graduation education. The U.S.A. exhibits a higher ratio of maless who have graduated in computer science compared to India, meaning that there are 4 times more males than females in the field in the US as India sustains a nearly equal ratio of males-to-females in computer science. 
+    </p>
+  </div>
+    
+  <div class="entry">
+    <img src="bachdeg.png" />
+    <img src="masterdeg.png" />
+    <img src="doctorsdeg.png" />
+    <p class="caption">
+        The preceding three visualizations display the variation between males and females that have obtained a computer/information science degree, separated by the different degree levels. In all three levels, there is generally a significantly lesser amount of females, compared to males, who have obtained a bachelors, masters, and/or doctorate degree in the field of computer science. This trend has been consistent in the time period of 1970-2011. 
+    </p>
+  </div>
+
+
+  <h3><i>Could education and knowledge play a factor in this misrepresentation? How does their academic performance in necessary classes compare to the academic performance of males in the same classes?</i></h3>
+    
+  <div class="entry">
+    <img src="math-sci-literacy-assess.png" />
+    <p class="caption">
+        Mathematics is a required subject that is necessary for computer science, and science is a subject that can branch off into different focuses - <i>few</i> of which are necessary for computer science. In this study, literacy assessment tests were given to the studied subjects, and the results reveal that males have consistently been more literate than females in the subject of mathematics, whereas, in the subject of science, females and males have started to "close the gap" of literacy. With that being said, because females are shown to be less proficient in math, they are less likely to choose majors and career paths that involve heavy usage of mathematics - such as computer science. 
+    </p>
+      
+  </div>
+    
+  <div class="entry">
+    <img src="grade11csenroll.png" />
+    <p class="caption">
+        This visualization shows that there is a bigger percentage of male students, rather than female students, who have enrolled in computer/information science courses in high school (by grade 11). The larger percentage of male students compared to female students indicates a difference of sex representation in computer science, which has stemmed from as early as high school. 
+    </p>
+  </div>
+    
+  <div class="entry">
+    <img src="correctanswers-phys.png" />
+    <p class="caption">
+        In this study, it is shown that males have consistently been more proficient in physical science compared to females. Physical science is another course that is required to obtain a degree in Computer Science, so this could contribute to the larger number of males in the field (i.e. since males tend to succeed in these necessary courses, they are more likely to be able to succeed in finishing the CS degree and obtaining a job in that field). Additionally, this indicates this misrepresentation of females in the field also stems from education and understanding of subjects needed for computer science.
+    </p>
+  </div>
+
+  <div class="entry">
+    <img src="correctanswers-bio.png" />
+    <p class="caption">
+        To support the last visualization, this visulaization shows that females are more proficient than males in the subject of biological sciences. Because females are tend to have a better understanding for biology, they are more likely to pursue a career within this field rather than the field of computer science. 
+    </p>
+  </div>
+
+  <h3><i>How does the representation of females in other majors compare to the representation of females in computer science?</i></h3>
+    
+  <div class="entry">
+    <img src="stemMajor.png">
+    <p class="caption">
+        There is a smaller percentage of U.S. undergraduate females that choose STEM majors compared to U.S. undergraduate males who do choose STEM majors. This indicates that there is a lower interest in STEM amongst female undergraduates.
+    </p>
+  </div>
+    
+  <div class="entry">
+    <img src="chosenSTEMfem.png">
+    <p class="caption">
+        Additionally, the females undergraduates who do choose STEM majors have shown a general trend of choosing a major within Social/Behavioral Sciences and Natural Sciences rather than Computer Science and Engineering. 
+    </p>
+  </div>
+
+
+  <div class="entry">
+    <h3>Summary</h3>
+    <p>
+        The gender disparity in computer science is a significant issue in the United States. Even though there is a larger population of women in the United States, there are more women with degrees in computer science in India. In the United States, there has been a significantly less amount of women who obtain bachelors, masters, and doctorate degrees in computer science compared to men. In grade school, males have shown to have a better academic performance in mathematics and physical science, and computer/information science courses have shown to be more popular than males. Females, on the other hand, have displayed a better performance in biological sciences. In college, there is a smaller amount of females that choose STEM majors, and of those females in STEM majors, there is a larger preference in majors pertaining to natural sciences and social/behavior sciences rather than math/computer sciences and engineering. 
+    </p>
+  </div>
+</section>
+
+</div>
+</body>
+</html>
